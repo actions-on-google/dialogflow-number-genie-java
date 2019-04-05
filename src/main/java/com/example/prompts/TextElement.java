@@ -71,6 +71,6 @@ public class TextElement implements Element {
 
   private String formatText(String string) {
     String[] args = arguments.toArray(new String[arguments.size()]);
-    return String.format(string, args);
+    return String.format(string, (Object[]) args);
   }
 }
